@@ -1,0 +1,51 @@
+form fieldset {
+  padding: 25px;
+  border-radius: 3px;
+  border: 1px solid #BBBBBB; }
+form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  form ul ul li {
+    clear: none;
+    margin: 0 0 5px 0; }
+form li {
+  clear: left;
+  margin: 0 0 20px 0;
+  position: relative; }
+
+label {
+  display: block;
+  margin: 0 0 10px 0;
+  color: #333333; }
+
+input,
+textarea {
+  border-radius: 3px; }
+  input[placeholder] + label,
+  textarea[placeholder] + label {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    color: #aaa; }
+
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="text"],
+input[type="url"],
+textarea {
+  border: 1px solid #bbbbbb;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box; }
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="password"]:focus,
+  input[type="text"]:focus,
+  input[type="url"]:focus,
+  textarea:focus {
+    outline: none;
+    border: 1px solid #98C6F2; }
+
+/*# sourceMappingURL=form.css.map */

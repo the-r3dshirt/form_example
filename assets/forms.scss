@@ -1,0 +1,82 @@
+
+// form and fieldset defaults
+
+form {
+
+    fieldset {
+        padding: 25px;
+        border-radius: 3px;
+        border: 1px solid #BBBBBB;
+    }
+
+    // top level inputs
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        // second level inputs
+
+        ul li {
+            clear: none;
+            margin: 0 0 5px 0;
+        }
+    }
+
+    li {
+        clear: left;
+        margin: 0 0 20px 0;
+        position: relative;
+    }
+}
+
+
+// labels
+
+label {
+    display: block;
+    margin: 0 0 10px 0;
+    color: #333333;
+}
+
+
+// inputs (of all kinds) and textareas
+
+input,
+textarea {
+    border-radius: 3px;
+
+    // fields with a placeholder attribute that have an adjacent label
+
+    &[placeholder] {
+
+        + label {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            color: #aaa;
+        }
+    }
+}
+
+
+// text based inputs (including textareas)
+
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="text"],
+input[type="url"],
+textarea {
+    border: 1px solid #bbbbbb;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+
+    &:focus {
+        outline: none;
+        border: 1px solid #98C6F2;
+
+    }
+}
